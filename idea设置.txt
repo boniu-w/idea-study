@@ -1,0 +1,19 @@
+
+ -------------------------设置注释的双斜杠不在行首-----------------------------------------------------------------------
+	进入 Settings -> Code Style -> Java ，在右边选择 “Code Generation” Tab，然后找到 Comment Code 那块，把
+	Line comment at first column
+	Block comment at first column
+	去掉前面两个的复选框
+
+ -------------------------重复代码 提示-----------------------------------------------------------------------
+	
+	inspections -> General -> duplicated code
+
+
+ -------------------------去除sql语句黄色 背景-----------------------------------------------------------------------
+
+	editor -> inspections -> no data sources configured ; sql dialect detection
+		   -> color scheme -> general -> errors and warnings -> warning -> background
+									  -> code -> injected language fragment -> background 
+
+
