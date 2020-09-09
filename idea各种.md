@@ -77,3 +77,22 @@ ALT+F8 弹出可输入计算表达式调试框,输入具体的内容,可看到�
 #### 8. 设置注释格式
 
 setting -> editor -> live templates -> 
+
+
+
+#### 9. unmapped spring configuration
+
+
+
+是web工程中的spring配置文件没有被IDEA所管理,
+
+Ctrl+Shift+Alt+S”打开project的配置界面，选择“Modules”页签，再选择报“Unmapped Spring configuration files found.”的Module，点击“+”按钮
+
+
+
+在弹出的窗口内，全部勾选Unmapped的Spring配置文件，点击“确定”，然后在父界面中点击“应用”或“确定”完成保存。
+
+最后，重启IDEA后，发现"Event Log"不再提示“Unmapped Spring configuration files found.Please configure Spring facet.” ，结束
+
+
+
