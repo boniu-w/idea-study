@@ -96,3 +96,20 @@ Ctrl+Shift+Alt+S”打开project的配置界面，选择“Modules”页签，�
 
 
 
+#### 10. 把自己写的util 打包
+
+一、
+在IDEA中选择File–>Project Structure，进入Project Structure窗口，在该窗口中，选择Artifacts，点击左侧的+号，选择JAR，选择Empty。如下图所示。
+
+二、
+上述步骤完成后，可以给新创建的Artifacts起一个名字，名字自己起。在左侧Artifacts列表栏中，点击你新创建的那个Artifacts，然后设置Output Directory，也就是打包后的Jar的输出路径（即Jar的存放路径），这里的输出路径可以自己设置，也可以使用默认的输出路径，只要你自己记得在哪里即可。
+输出路径设置完毕后，点击Output Layout，然后点击下面的+号，再选择Directory Content。如下图所示。
+
+三、
+此时，会弹出一个路径选择框，让你选择需要打包的工具类的class文件，注意：是选择需要打包的工具类的class文件，而不是java文件。比如：你需要将DownloadUtils这一个工具类打成Jar包，那么这里你需要选择的路径是DownloadUtils.class所在的路径，而不是DownloadUtils.java所在的路径。
+选择完毕后，点击OK。如下图所示。
+
+四、
+在IDEA最上面的菜单栏选择Build–>Build Artifacts此时会弹出一个窗口，让你选择哪个Artifacts，选择刚刚创建的那个Artifacts即可。然后点击右边小窗口的Build就可以了。如下图所示。
+
+此时，去你设置的输出路径中查看，就可以看到有生成的Jar包了。
