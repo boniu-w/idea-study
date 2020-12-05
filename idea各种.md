@@ -121,3 +121,14 @@ Ctrl+Shift+Alt+S”打开project的配置界面，选择“Modules”页签，�
 #### 11. 引入外部jar包
 
 project structure -> libraties > + > java -> 选择外部jar包所在目录 -> ok
+
+
+#### 12. intellij idea 设置显示空格
+
+1. intellij idea 设置显示空格
+
+点击菜单 File -> Settings
+在弹出的窗口点击 Editor -> General -> Appearance
+把Show whitespaces 勾选上就行。
+
+2. tab 空格数
