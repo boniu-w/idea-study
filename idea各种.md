@@ -120,4 +120,32 @@ Ctrl+Shift+Alt+S”打开project的配置界面，选择“Modules”页签，�
 
 #### 11. 引入外部jar包
 
-project structure -> libraties > + > java -> 选择外部jar包所在目录 -> ok
+1. 第一种方法: project structure -> libraties > + > java -> 选择外部jar包所在目录 -> ok
+
+2. 第二种方法: 直接右键lib对应的jar包，单击Add as Library
+
+
+
+#### 12. properties 文件 unicode 转码
+
+ctrl+alt+s打开设置窗口，搜：file Encoding，勾上Transparent native-to-ascii conversion即可
+
+
+
+#### 13. 修改IDEA默认的全局配置
+
+使用IDEA过程中会发现没打开一个新的项目，maven项目总是还原回去，并不是自己设置的路径。
+
+
+
+#### 14. idea : command line is too lang
+
+```java
+Command line is too long.shorten command line for
+```
+
+Shorten command line : JAR manifest -java -cp classpath.jar classname[args]
+
+在.idea/workspace.xml文件 -> \<component name="PropertiesComponent"> 添加一行 ->
+
+\<property name = "dynamic.classpath" value= "true"/>
