@@ -149,3 +149,16 @@ Shorten command line : JAR manifest -java -cp classpath.jar classname[args]
 在.idea/workspace.xml文件 -> \<component name="PropertiesComponent"> 添加一行 ->
 
 \<property name = "dynamic.classpath" value= "true"/>
+=======
+project structure -> libraties > + > java -> 选择外部jar包所在目录 -> ok
+
+
+#### 12. intellij idea 设置显示空格
+
+1. intellij idea 设置显示空格
+
+点击菜单 File -> Settings
+在弹出的窗口点击 Editor -> General -> Appearance
+把Show whitespaces 勾选上就行。
+
+2. tab 空格数
